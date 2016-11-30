@@ -1,0 +1,25 @@
+<strong>Sup, This is ReFormer Edit!<strong>
+<br><br>
+
+<%= form_for @user do |f| %>
+	<%= f.label :username, "Your Username: " %>
+	<%= f.text_field :username %><br/ >
+	<%= f.label :email, "E-mail: " %>
+	<%= f.text_field :email, placeholder: "example@example.net" %><br/ >
+	<%= f.label :password, "Password: " %>
+	<%= f.password_field :password %><br/ >
+	<%= f.submit "Submit" %>
+<% end %>
+
+
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this edit:</h2>
+
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

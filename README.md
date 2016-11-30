@@ -1,24 +1,10 @@
-# README
+# RE-FORMER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is part of the Forms Project in The Odin Project's Ruby on [Rails Curriculum.](http://www.theodinproject.com/courses/ruby-on-rails/lessons/forms)
 
-Things you may want to cover:
+Forms were created using three methods:
+*  In a "non-railsy" way using old-fashioned HTML tags
+*  Using the form_tag helper
+*  Using the form_for helper
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Forms contain basic validations and error messages are displayed in the view when records cannot be created or updated.
